@@ -5,7 +5,7 @@ type SpinnerProps = {
   noPadding?: boolean
 }
 
-export const Spinner = ({ noPadding }: SpinnerProps) => {
+export const Spinner = ({ noPadding=false }: SpinnerProps) => {
   return (
     <div className={cn('w-full flex justify-center', noPadding ? '' : 'py-10')}>
       <div role="status">
